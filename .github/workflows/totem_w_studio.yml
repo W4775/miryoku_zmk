@@ -1,0 +1,11 @@
+name: 'Totem with studio'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["seeeduino_xiao_ble"]'
+      shield: '["totem_left","totem_right"]'
+      kconfig: '["CONFIG_ZMK_STUDIO=y"]'
+      snippets: '["studio-rpc-usb-uart"]'
