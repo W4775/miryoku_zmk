@@ -3,5 +3,5 @@
 
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/38/totem.h"
-#include "../miryoku/totem.dtsi"
+#include "../boards/shields/totem/totem.dtsi"
 #include "../miryoku/miryoku.dtsi"
